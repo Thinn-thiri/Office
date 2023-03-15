@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .table {
+            width: 80%;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #6f1d1b40;
+        }
+        
+        .table thead {
+            background-color: rgb(111, 29, 27);
+            color: rgb(225, 230, 167);
+        }
+        
+        .table tr,
+        td,
+        th {
+            padding: 10px 15px;
+            /* border: 1px solid black; */
+        }
+        
+        tbody:nth-child(even) {
+            background-color: rgb(225, 230, 167);
+        }
+        
+        .table tbody tr:hover {
+            background-color: #eeeeee99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thinn</td>
+                    <td>thinn@gmail.com</td>
+                    <td>Yangon</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Kaung</td>
+                    <td>kaung@gmail.com</td>
+                    <td>Mudon</td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Phoe</td>
+                    <td>phoe@gmail.com</td>
+                    <td>Mandalay</td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Soe</td>
+                    <td>soe@gmail.com</td>
+                    <td>Mawlamyine</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>Hnin</td>
+                    <td>hnin@gmail.com</td>
+                    <td>Dawai</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

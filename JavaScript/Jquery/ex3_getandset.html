@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Set</title>
+</head>
+
+<body>
+    <h1 title="WELCOME">Hello welcome from my world!!</h1>
+    <h2>May be healthy and happy? I wish</h2>
+
+    <input type="text">
+    <button>Register</button>
+
+    <select id="myFood">
+       <option value="apple">A</option>
+       <option value="orange">B</option>
+       <option value="banana">C</option>
+    </select>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log("hello");
+        console.log($('h1').html());
+        $('h1').html("Thinn Thiri Soe"); //Set Content --> same --> .text();
+        console.log($('h2').text());
+        $('button').click(function() {
+            console.log($('input').val());
+            console.log($('#myFood').val())
+        })
+        $("h1").click(function() {
+            console.log($(this).attr("title"));
+            $(this).attr("title", "BE HAPPY") // --> Set Attribute
+        })
+    })
+</script>
+
+</html>

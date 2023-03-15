@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .happy {
+            color: red;
+            background-color: aqua;
+            display: inline-block;
+            outline: blue dashed;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        
+        h3 {
+            color: red;
+            background-color: aqua;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        
+        img {
+            height: 100px;
+        }
+    </style>
+    <!-- <script>
+        console.log("Hi This is from head tag");
+    </script> -->
+</head>
+
+<body>
+    <h2 class="happy">Happy day</h2>
+    <h3>Good Night</h3>
+    <h1 id="js">JavaScript test</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, incidunt, quidem, deserunt culpa possimus fuga nesciunt numquam odio quibusdam inventore ex quas deleniti odit consequuntur natus sunt voluptas id officia?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur ducimus vitae perspiciatis molestias numquam porro rem harum eos inventore, molestiae ea dolores ex fugiat, officia ullam excepturi pariatur! Deserunt!</p>
+    <h1 id="id">JavaScript id</h1>
+    <h1 class="class">JavaScript class</h1>
+    <button type="button" id="red">red</button>
+    <button type="button" id="yellow">yellow</button>
+
+    <!-- <script>
+        console.log("This is from abve body tag closed")
+    </script> -->
+</body>
+<!-- <script src="./app.js"></script> -->
+<script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<lord-icon src="https://cdn.lordicon.com/kfzfxczd.json" trigger="hover" style="width:150px;height:150px">
+</lord-icon>
+<script>
+    let name = document.getElementById("js");
+    name.style.color = "blue";
+    console.log(name);
+    let para = document.getElementsByTagName("p");
+    console.log(para[1]);
+    document.querySelector("#id").style.color = "red";
+    document.querySelector(".class").style.color = "pink";
+    var title = document.querySelector(".happy");
+    var titles = document.getElementsByTagName("h3")[0];
+    document.getElementById("red").addEventListener("click", function() {
+        title.innerHTML = "RED";
+        title.style.backgroundColor = "pink";
+    })
+    document.getElementById("yellow").addEventListener("mouseover", function() {
+        titles.innerHTML = "GREEN";
+        titles.style.backgroundColor = "green";
+    })
+</script>
+
+</html>

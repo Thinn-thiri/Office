@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <h1 id="heading">Jquery Testing</h1>
+    <h1 id="body">Welcome from Myanmar</h1>
+    <h1 id="body2">Goodbye from Myanmar</h1>
+    <h1 id="body3">Welcome from Singapore</h1>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+<script src="./jquery.min.js"></script>
+<script>
+    // $("#heading")= document.querySelector("#heading")
+    // .innerHTMl = .html("")
+
+    // document.querySelector("#heading").innerHTML = "Hello! Welcome from Jquery";
+    // $("#heading").html("Hello! Welcome from Jquery");
+
+
+    // document.querySelector("#heading").addEventListener("click", function() {
+    //     this.style.display = "none";
+    // })
+    // $("#heading").click(function() {
+    //     $(this).hide(500, function() {
+    //         console.log("Hello welcome from my website");
+    //     }); //3000 = 3s
+    // });
+
+    $(document).ready(() => {
+        $('#heading').click(function() {
+            $(this).css("background-color", "red");
+            $(this).css("color", "white");
+        })
+        $('#body').dblclick(function() {
+            $(this).hide(2000);
+        })
+        $('#body2').mouseleave(function() {
+            $(this).hide(2000);
+        })
+        $('#body3').mouseenter(function() {
+            $(this).hide(2000);
+        })
+        console.log("Hi I am here")
+    })
+</script>
+
+</html>

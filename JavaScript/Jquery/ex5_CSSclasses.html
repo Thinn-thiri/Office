@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS classes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        .title {
+            color: red;
+        }
+        
+        i {
+            padding: 10px 3px;
+        }
+        
+        .bg-dark {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Hello World</h1>
+    <button class="dark"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>
+
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log($('.title').css("color"));
+        $('.title').addClass("bg-dark"); //--> add bg-color in hello world  with CSS class
+        $('.title').removeClass("bg-dark"); //--> remove bg-color in hello world 
+        $('.title').click(function() {
+            $(this).toggleClass("bg-dark"); //--> toggle bg-color in helllo world while clicking
+        })
+
+        $('.dark').click(function() {
+            $('body').toggleClass("bg-dark");
+        })
+
+    })
+</script>
+
+</html>

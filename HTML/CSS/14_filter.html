@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        /* .container {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+             height: 100vh;
+        }
+        
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        
+        .layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container img {
+            width: 400px;
+            transition: 0.5s;
+            filter: blur(5px);
+        }
+        
+        .container2 img {
+            width: 400px;
+            transition: 0.5s;
+        }
+        
+        .container3 img {
+            width: 400px;
+            transition: 0.5s;
+            filter: brightness(0.5);
+        }
+        
+        .container img:hover {
+            filter: blur(0px);
+        }
+        
+        .container2 img:hover {
+            filter: contrast(200%);
+        }
+        
+        .container3 img:hover {
+            filter: brightness(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="container">
+            <img src="./image/five.JPG" alt="">
+        </div>
+        <div class="container2">
+            <img src="./image/four.JPG" alt="">
+        </div>
+        <div class="container3">
+            <img src="./image/one.JPG" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

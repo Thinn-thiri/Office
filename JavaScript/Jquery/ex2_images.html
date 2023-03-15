@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        img {
+            width: 400px;
+            display: none;
+        }
+        
+        .container {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px;
+        }
+        
+        .box {
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 8px dotted red;
+            margin-top: 30px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="Showbtn">Show</button>
+        <button id="Hidebtn">Hide</button>
+        <button id="Togglebtn">Toggle</button>
+        <button id="FadeInbtn">FadeIn</button>
+        <button id="FadeOutbtn">FadeOut</button>
+        <button id="FadeTogglebtn">FadeToggle</button>
+        <button id="FadeTobtn">FadeTo</button>
+        <button id="FadeTobtn2">FadeTo2</button>
+        <button id="Slidedown">Slide Down</button>
+        <button id="Slideup">Slide Up</button>
+        <button id="Slidetoggle">Slide Toggle</button>
+    </div>
+    <img src="./sunset.jpeg" id="myImage">
+
+    <div class="container">
+        <button class="animations">Animate</button>
+        <button class="stop">Stop</button>
+        <button class="chaining">Chaining</button>
+        <div class="box"></div>
+    </div>
+    <h1 id="welcome">Singapore</h1>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#Showbtn').click(function() {
+            $('#myImage').show(1000);
+            // $('#myImage').css("display", "block"); --> CSS style
+        })
+        $('#Hidebtn').click(function() {
+            $('#myImage').hide(1000);
+        })
+        $('#Togglebtn').click(function() {
+            $('#myImage').toggle(1000);
+        })
+        $('#FadeInbtn').click(function() {
+            $('#myImage').fadeIn(1000);
+        })
+        $('#FadeOutbtn').click(function() {
+            $('#myImage').fadeOut(1000);
+        })
+        $('#FadeTogglebtn').click(function() {
+            $('#myImage').fadeToggle(1000);
+        })
+        $('#FadeTobtn').click(function() {
+            $('#myImage').fadeTo(1000, 0.3);
+        })
+        $('#FadeTobtn2').click(function() {
+            $('#myImage').fadeTo(1000, 1);
+        })
+        $('#Slidedown').click(function() {
+            $('#myImage').slideDown(1000);
+        })
+        $('#Slideup').click(function() {
+            $('#myImage').slideUp(1000);
+        })
+        $('#Slidetoggle').click(function() {
+            $('#myImage').slideToggle(1000);
+        })
+        $('.animations').click(function() {
+            $('.box').animate({
+                    left: "300px",
+                    top: "30px",
+                    width: "+=100px", //original size + 100px
+                    height: "+=100px",
+
+                }, 5000,
+                function() {
+                    console.log("hello");
+                    $('#myImage').show(1000);
+                })
+        })
+        $('.stop').click(function() {
+            $('.box').stop(true, true);
+        })
+        $(".chaining").click(function() {
+            $("#welcome").css("color", "red")
+                .hide(2000)
+                .show(2000)
+        })
+    })
+</script>
+
+</html>

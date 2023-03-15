@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACULATOR</title>
+    <link rel="icon" href="./caculator.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(205, 180, 219);
+        }
+        
+        .content {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            border-radius: 12px;
+        }
+        
+        .title {
+            color: rgb(205, 180, 219);
+            font-size: 28px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 8px;
+            margin-top: 40%;
+        }
+        
+        label {
+            display: block;
+            padding-bottom: 3px;
+            padding-top: 10px;
+        }
+        
+        .input-group {
+            margin-left: 15px;
+        }
+        
+        .input-box {
+            width: 87%;
+            border-radius: 3px;
+            border: 1px solid rgb(205, 180, 219);
+            padding: 8px;
+        }
+        
+        .check {
+            padding: 10px 0px;
+            margin-left: 15px;
+        }
+        
+        .check span {
+            color: rgb(205, 180, 219);
+        }
+        
+        .button {
+            font-size: 15px;
+            background-color: rgb(205, 180, 219);
+            color: white;
+            margin: 16px 135px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            padding: 4px 10px;
+        }
+        
+        .log-in {
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 13px;
+        }
+        
+        .log-in span {
+            color: rgb(205, 180, 219);
+        }
+        
+        .result {
+            height: 30px;
+            text-align: end;
+            background-color: black;
+            color: white;
+            padding: 10px 10px 2px 10px;
+        }
+        
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="title">Caculator</div>
+        <div class="result" id="result">0</div>
+        <div class="input-group">
+            <label for="">First Number :</label>
+            <input type="number" id="firstNum" class="input-box" placeholder="Enter first Number...">
+            <small class="error" id="numOneError">Number One is required!</small>
+        </div>
+        <div class="input-group">
+            <label for="">Second Number :</label>
+            <input type="number" id="secNum" class="input-box" placeholder="Enter Second Number...">
+            <small class="error" id="numTwoError">Number Two is required!</small>
+        </div>
+        <div class="input-group">
+            <label for="">Operator :</label>
+            <select class="input-box" id="operation">
+                <option value="empty">Choose Options..</option>
+                <option value="add">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="division">/</option>
+                
+            </select>
+            <small class="error" id="operatorError">Operator is required!</small>
+        </div>
+
+        <div class="button-group">
+            <button type="button" id="btnCaculate" class="button">Caculate</button>
+        </div>
+
+    </div>
+</body>
+<script src="./caculator.js"></script>
+
+</html>

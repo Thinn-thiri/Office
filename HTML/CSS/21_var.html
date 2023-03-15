@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable declaration</title>
+    <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css " integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="
+        anonymous " referrerpolicy="no-referrer ">
+    <style>
+         :root {
+            --background-white: white;
+            --background-dark: black;
+            --text-white: white;
+            --text-dark: black;
+            --bg-danger: red;
+        }
+        
+        body {
+            background-color: rgb(255, 219, 225);
+        }
+        
+        .light-btn {
+            background-color: yellow;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .dark-btn {
+            background-color: rgb(25, 0, 255);
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .light-btn:focus {
+            background-color: var(--bg-danger);
+        }
+        
+        .dark-btn:focus {
+            background-color: var(--bg-danger);
+        }
+        
+        h1 {}
+    </style>
+</head>
+
+<body>
+    <button class="light-btn">
+        <i class="fa-solid fa-toggle-on"></i>Switch On
+    </button>
+    <button class="dark-btn">
+        <i class="fa-solid fa-toggle-off"></i>Switch Off
+    </button>
+    <h1>Welcome from coding world</h1>
+</body>
+
+</html>

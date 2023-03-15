@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text shadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: bisque;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 10px;
+            text-shadow: 10px 10px 5px #00800080;
+        }
+        
+        img {
+            width: 50%;
+            transition: 0.5s;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px #00800050;
+        }
+        
+        img:hover {
+            transform: scale(1.2) rotate(3deg);
+            filter: brightness(1.1) drop-shadow(1px 1px 2px green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <img src="./image/d5.jpeg" alt="">
+        <h1>This is my lovely dog</h1>
+    </div>
+</body>
+
+</html>

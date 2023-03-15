@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex flow</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 5px;
+            background-color: black;
+            /* height: 200px; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        
+        .container1 {
+            display: flex;
+            margin: 5px;
+            background-color: black;
+            height: 200px;
+            justify-content: end;
+            align-items: end;
+        }
+        
+        .container2 {
+            display: flex;
+            margin: 5px;
+            background-color: black;
+            height: 200px;
+            justify-content: end;
+            align-items: start;
+        }
+        
+        .container3 {
+            display: flex;
+            margin: 5px;
+            background-color: black;
+            height: 200px;
+        }
+        
+        .para {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        
+        .one {
+            align-self: flex-start;
+        }
+        
+        .two {
+            align-self: center;
+        }
+        
+        .three {
+            align-self: end;
+        }
+        /* .five {
+            align-self: flex-start;
+        }
+        
+        .four {
+            align-self: center;
+        }
+        
+        .six {
+            align-self: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="para">One</div>
+        <div class="para">Two</div>
+        <div class="para">Three</div>
+        <div class="para">One</div>
+        <div class="para">Two</div>
+        <div class="para">Three</div>
+    </div>
+    <div class="container1">
+        <div class="para">One</div>
+        <div class="para">Two</div>
+        <div class="para">Three</div>
+    </div>
+    <div class="container2">
+        <div class="para">One</div>
+        <div class="para">Two</div>
+        <div class="para">Three</div>
+    </div>
+    <div class="container3">
+        <div class="para one">One</div>
+        <div class="para two">Two</div>
+        <div class="para three">Three</div>
+        <div class="para two">4</div>
+        <div class="para one">5</div>
+        <div class="para two">6</div>
+    </div>
+</body>
+
+</html>

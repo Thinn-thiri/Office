@@ -1,0 +1,14 @@
+ none <576px
+ 576 <= sm >= 768 (small)
+ 768 <= md >= 992 (medium)
+ 992 <= lg >= 1200 (large)
+ 1200 <= xl >= 1400 (extra large)
+ 1400 <= xxl (very extra large)
+
+ sm 576-768
+ md 768-992
+ lg 992-1200
+ xl 1200-1400
+ xxl >= 1400
+
+ small => large

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and remove</title>
+</head>
+
+<body>
+    <ul class="myList">
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+
+    <ul class="myList1">
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+    <ul class="myList2">
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.myList').append(`<li style= "color:red">Pineapple</li>`);
+        $('.myList').prepend(`<li style= "color:purple">Banana</li>`);
+        $('.myList').before(`<p style = "color :green">Hello Welcome</p>`);
+        $('.myList').after(`<p style = "color :blue">Bye See You later</p>`);
+        $('.myList1').remove();
+
+        $('.myList2').empty();
+    })
+</script>
+
+</html>

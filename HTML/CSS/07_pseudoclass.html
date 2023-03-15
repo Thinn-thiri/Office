@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            background-color: mediumturquoise;
+            height: 2000px;
+        }
+        
+        .content {
+            background-color: white;
+            width: 500px;
+            height: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        
+        .title {
+            padding-top: 30px;
+            font-size: 30px;
+        }
+        
+        .para {
+            padding: 15px 20px;
+            font-size: 15px;
+        }
+        
+        .btn {
+            background-color: rgb(169, 255, 255);
+            font-size: 20px;
+            width: 70%;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 20px;
+            transition: 0.5s;
+        }
+        
+        .content:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .btn:focus {
+            background-color: red;
+            color: white;
+        }
+        
+        .content:active {
+            background-color: brown;
+        }
+        
+        .text {
+            text-align: center;
+        }
+        
+        .name {
+            width: 200px;
+            height: 30px;
+            margin: auto;
+            margin-top: 20px;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .name:focus {
+            background-color: pink;
+        }
+        
+        .mypara {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        span {
+            font-size: 30px;
+        }
+        
+        span::before {
+            content: "Hello";
+            font-size: 40px;
+            color: blue;
+        }
+        
+        span::after {
+            content: url("https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg");
+            width: 200px;
+            /*width and height cannot be changed*/
+            height: 100px;
+            font-size: 50px;
+            color: red;
+            display: block;
+        }
+        
+        i {
+            font-size: 50px;
+            color: peru;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">Hello Everyone!</div>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis similique exercitationem veniam fugit recusandae nam voluptatem id deserunt est, amet voluptatum rem laborum officia ipsum! Veritatis eos placeat nesciunt? Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Fugit omnis ab tempore expedita obcaecati nulla numquam illum vel, exercitationem alias minus itaque inventore perferendis eos veritatis aliquam sit explicabo officiis! loream Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Magnam, nesciunt beatae? Facilis amet, exercitationem maxime corrupti non, placeat consequatur quia excepturi dolorum rerum ad! Voluptate iusto quos quaerat esse perspiciatis.
+        </p>
+        <button class="btn">Register</button>
+    </div>
+    <div class="text">
+        <input type="text" class="name">
+    </div>
+    <hr>
+    <div class="mypara">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <span>Hello World</span>
+    </div>
+</body>
+
+</html>
